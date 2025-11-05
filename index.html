@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>X & O</title>
+    <script src="script.js"> </script>
+</head>
+
+<body>
+
+
+    <audio src="PhotonTorp.mp3" id="clickSound" ></audio>
+    <section class="players"> 
+        <input type="text" placeholder="Խաղացող X" id="player1">
+        <input type="text" placeholder="Խաղացող O" id="player2">
+    </section>
+
+
+    <section class="platform">
+        <div class="cell" onclick="logic(this)"></div>
+        <div class="cell" onclick="logic(this)"></div>
+        <div class="cell" onclick="logic(this)"></div>
+        <div class="cell" onclick="logic(this)"></div>
+        <div class="cell" onclick="logic(this)"></div>
+        <div class="cell" onclick="logic(this)"></div>
+        <div class="cell" onclick="logic(this)"></div>
+        <div class="cell" onclick="logic(this)"></div>
+        <div class="cell" onclick="logic(this)"></div>
+    </section>
+
+
+    <section id="vin">
+        <p id="close"> <img src="clse.png"  onclick="pakel()"> </p>
+        <p id="vinName">
+             GAME WINNER 
+    
+        </p>
+    </section>
+</body>
+
+</html>

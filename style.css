@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(135deg, #8252EC, #cd80f7);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.players {
+    width: 100vw;
+    text-align: center;
+}
+
+
+#player1,
+#player2 {
+    font-size: 30px;
+    outline: none;
+    background-color: transparent;
+    color: rgb(74, 28, 116);
+    border-width: 0;
+    border-bottom-width: 5px;
+    border-radius: 10px;
+    margin: 30px;
+    text-align: center;
+    border-color: rgb(74, 28, 116);
+}
+
+
+#player1:focus::placeholder, #player2:focus::placeholder{
+    font-size:0px;
+}
+
+#player1::placeholder,
+#player2::placeholder {
+    color: rgb(101, 19, 97);
+    text-align: center;
+    transition: 0.5s;
+}
+
+.platform {
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 7%;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.cell:hover {
+    background-color: rgb(187, 216, 235);
+
+}
+
+
+#vin{
+        position:absolute;
+        display: none;
+        border-color: rgb(74, 28, 116);
+        background-color: #8252EC;
+        width: 70vw;
+        height: 60vh;
+        margin-top: 10vh;
+        box-shadow: 10px 10px 5px rgb(39, 8, 69);
+       
+      
+}
+
+#close {
+    text-align: right;
+    padding-right: 30px;
+
+}
+
+#close img{
+    width: 70px;
+}
+#vinName{
+    text-align: center;
+    font-size: 50px;
+    color: #1b1034;
+    text-shadow: 3px 3px 3px #b198e6,  -3px -3px 3px #8b7ea8, 
+                 5px 5px 3px #b198e6,  -5px -5px 3px #8b7ea8;
+}
